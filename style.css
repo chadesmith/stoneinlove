@@ -1,0 +1,45 @@
+body {
+    background-color:black;
+   }
+   
+   . main {    display:grid;
+        grid-template-areas:
+            "header"
+            "navigation"
+            "content"
+            "footer"; 
+        grid-template-rows: min-content min-content auto min-content;  }
+   
+   
+   . header {
+    
+   }
+   
+   
+   /*. navigation { 
+   backgground-color:brown;
+       display:grid;
+       
+       grid-template-areas:
+         "home"
+           "bio" 
+         "contact"
+        "media"
+          grid-template-columns: space-between;*/
+     
+   }
+     
+   content{
+       display: grid;
+       grid-template-areas:
+           10% 80% 10%;;
+       grid-template-columns;
+       center;
+   }
+       
+       
+   
+   
+   
+     
+   
