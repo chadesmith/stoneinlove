@@ -1,73 +1,82 @@
 
    
-   body { 
-       display: flex;
-       justify-content: center;
-     background-color:black;
-   }
+ body {
+
+     background-color: black;
+  }
+
+
   .main {
-      margin:1rem;
-      border-color:darkred;
-      padding:1% 6.25%;
+   border: 1vh 8vh;
+    width:97vw;
      display:grid;
         grid-template-areas:
             "Header"
             "Navigation"
-            "Content"
-            "Footer"; 
-        grid-template-rows:10% 7% 46rem 10%;
+             "Frame"
+              "Footer";
+            
+
+        grid-template-rows:18vw 7vw 58vw 5vw ;
         }
-  .logo {
-      max-height: 51em;
-  }
+
+
+.Header > logo {
+     display:flex;
+     justify-content: center;
+     height: 20vw;
+    }
+  
+  
    
   .Header {
-      margin: 1rem;
-     max-width: 98%;
-      display:flex;
-      justify-content: space-around;
-     background-color:black;
+      grid-area: Header;
+   background-color:black;
+     border-top-left-radius: 3vw;
+     border-top-right-radius: 3vw;
+     border-bottom-left-radius: 3vw;
+     border-bottom-right-radius: 3vw;
+ 
   }
 
-  .Navigation { margin:0 1rem;
-       padding: 0;
-      display:flex;
-      justify-content: center;
-      width: 98%;
-  }
-   .Navigation > ul {
+
+
+  .Navigation { 
+     grid-area: Navigation;
+     background-color: rgb(204, 82, 11);
+    border-top-left-radius: 3vw;
+     border-top-right-radius: 3vw;
+    }
+
+
+ .Navigation > ul {
        display: flex;
-       flex-direction: row;
-       padding: 1em;
-      justify-content: space-between;
-    width: 78rem;
-   background-color:black;
-   font-size: 3em;
+       flex-direction: row; 
+       justify-content: space-around;
+  font-size: 2em;
    list-style: none;
   }
 
- /* .Navigation > ul > li {
-      display: flex;
-     max-width: 110%;
-      
-  }
-
-  #four {
-       padding: 0 .5em 0 0;
-  }*/
-
-   .Content{
+   .Frame {
+       grid-area: Frame;
        display:flex;
-       justify-content:space-around;
-       max-height: 46rem;
-      background-color: black;
+      justify-content:space-around;
+       background-color:  rgb(204, 82, 11);
    }
 
+  /* .box {
+       max-height: 50em;
+       width: 100%;
+   }  */
+
    .Footer {
+    grid-area: Footer;
          display: flex;
-         width: 94%;
+    
        justify-content: center;
-       background-color:black;
+       background-color: rgb(204, 82, 11);
        font-size: 2em;
-       margin: 5rem 3rem;
+       margin: 5px 3px;
+       border-bottom-left-radius: 3vw;
+       border-bottom-right-radius: 3vw;
    }
