@@ -13,13 +13,13 @@
             "Navigation"
              "Frame"
               "Footer";
-             grid-template-rows:34% 5% 50% 5% ;
+             grid-template-rows:30% 8% 50% 12% ;
         }
 
 .Header > logo {
      display:flex;
      justify-content: center;
-     height: 34%;
+     height: 30%;
     }
  
   
@@ -29,33 +29,25 @@
    background-color:black;
    margin: 1%;
    width: 98%;
-    /* border-top-left-radius: 3vw;
-     border-top-right-radius: 3vw;
-     border-bottom-left-radius: 3vw;
-     border-bottom-right-radius: 3vw;*/
+
  
   }
 
 
   .Navigation { 
      grid-area: Navigation;
-width: 98%;
-  /*  background-color: rgb(175, 69, 37);*/
-  /*  border-top-left-radius: 3vw;
-     border-top-right-radius: 3vw;
-    }*/
+     margin: o 1%;
+       width: 98%;
 }
-  /*  .Navigation >  box {
-        width: 25%;
-    }*/
+  
 
 
  .Navigation > ul {
        display: flex;
        flex-direction: row; 
-       justify-content: space-around;
-  font-size: 4vw;
-  padding: 0 2%;parcel html.
+       justify-content: space-evenly;
+       position: sticky;
+  font-size: 5.5vw;
    list-style: none;
   }
 
@@ -66,16 +58,13 @@ width: 98%;
        display:flex;
       justify-content:space-around;
    }
-.Frame > pix {
-   
-}
+
    .Footer {
     grid-area: Footer;
          display: flex;
-    width: 98%;
+    width: 99%;
        justify-content: center;
-      /* background-color: rgb(175, 69, 37);*/
-     font-size: 3vw;
+     font-size: 4.75vw;
        border-bottom-left-radius: 3vw;
        border-bottom-right-radius: 3vw;
    }
