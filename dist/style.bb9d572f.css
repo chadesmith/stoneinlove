@@ -60,7 +60,7 @@
        grid-area: Frame;
        width:100%;
        display:flex;
-      justify-content:space-around;  
+      justify-content:center;  
 
    }
 
