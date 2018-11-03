@@ -1,15 +1,14 @@
 
    
  body {
-     max-width: 98vw;
+     width: 98vw;
      position: relative;
      background-color:black;
   }
 
 
   .main {
-
-     display:grid;
+       display:grid;
         grid-template-areas:
             "Header"
             "Navigation"
@@ -23,15 +22,17 @@
     max-height: 100%;
      display:flex;
      justify-content: center;
+   
     }
- 
+
   
    
   .Header {
       grid-area: Header;
    background-color:black;
    width: 100%;
-   height: 116%;
+   height: 116%; 
+    position: static;
    /* overage to compensate for image */
   
 
@@ -100,8 +101,9 @@
      }
 
   
-/* @media only screen and (min-device-width: 250px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 10) {
-   
-   }*?
+ /*@media (max-width: 325px)
+   { .Header {
+       background-color: yellow;
+
+      }
+    }*/
